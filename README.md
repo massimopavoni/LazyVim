@@ -1,3 +1,3 @@
-# nvim
+# LazyVim
 
 Custom [LazyVim](https://github.com/LazyVim/LazyVim) distro config 
