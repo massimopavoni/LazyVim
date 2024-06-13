@@ -13,6 +13,7 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- extras modules
     -- coding
+    { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     -- languages
     { import = "lazyvim.plugins.extras.lang.clangd" },
