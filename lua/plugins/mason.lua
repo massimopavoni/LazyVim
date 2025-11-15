@@ -11,6 +11,7 @@ return {
       "haskell-language-server",
       "helm-ls",
       "json-lsp",
+      "kube-linter",
       "lua-language-server",
       "markdown-toc",
       "markdownlint",
