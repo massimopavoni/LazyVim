@@ -6,4 +6,5 @@ vim.g.autoformat = false
 
 local opt = vim.opt
 
+-- Add Italian spellcheck other than English
 opt.spelllang = { "en", "it" }

@@ -3,10 +3,12 @@ return {
   opts = {
     filesystem = {
       filtered_items = {
+        -- Show dotfiles, gitignored, and more
         visible = true,
       },
     },
     window = {
+      -- Slightly wider column
       width = 48,
     },
   },

@@ -1,6 +1,7 @@
 return {
   "saghen/blink.cmp",
   opts = {
+    -- Basically supertab
     keymap = {
       preset = "enter",
       ["<Tab>"] = { "snippet_forward", "select_next", "fallback" },

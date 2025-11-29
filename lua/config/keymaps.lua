@@ -4,16 +4,20 @@
 
 local map = vim.keymap.set
 
--- control backspace/delete
+-- Control backspace/delete
 map("i", "<c-bs>", "<c-w>", { desc = "Delete previous word" })
 map("i", "<c-del>", "<c-o>dw", { desc = "Delete next word" })
 
--- floating terminal
+-- Floating terminal
 map("n", "<c-s-/>", function()
   Snacks.terminal()
 end, { desc = "Terminal (cwd)" })
 
--- formatting
+-- Formatting
 map({ "n", "v" }, "<c-s-i>", function()
   LazyVim.format({ force = true })
 end, { desc = "Format" })
+
+-- Paste from last yank
+map({ "n", "x" }, "gp", '"0p', { desc = "Paste last yanked text" })
+map({ "n", "x" }, "gP", '"0P', { desc = "Paste last yanked text (before)" })
